@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Kitty Baking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="game-area">
+    <div id="customer-area">
+        <img id="customer-image" src="" alt="Customer">
+        <p id="order-text"></p>
+    </div>
+
+    <div id="baking-stations">
+        <div class="station">
+            <h3>Treat</h3>
+            <div id="treat-options"></div>
+        </div>
+        <div class="station">
+            <h3>Frosting</h3>
+            <div id="frosting-options"></div>
+        </div>
+        <div class="station">
+            <h3>Sprinkles</h3>
+            <div id="sprinkles-options"></div>
+        </div>
+    </div>
+
+    <button onclick="checkOrder()">Bake!</button>
+
+    <div id="feedback"></div>
+
+    <div id="valentine-message"></div> </div>
+
+<div id="story-modal" class="modal">
+    <div class="modal-content">
+        <img src="images/hellokittybaking.png" alt="Hello Kitty Baking" class="modal-image">
+        <p id="story-text">
+            Hello Kitty wants to make delicious treats for everyone. She's got a mountain of orders to fill: 
+            My Melody wants a pink cupcake with heart sprinkles, Kuromi's craving a chocolate cookie with star sprinkles, and even Badtz-Maru has requested a cake with rainbow sprinkles. 
+            <br><br>
+            Hello Kitty is working as fast as she can, but she's starting to fall behind. Can you help her bake all these treats in time?
+        </p>
+        <button id="start-game-button">Start Game</button>
+    </div>
+</div>
+
+<div id="letter" style="display: none;">
+    <div id="letter-content">
+        <h2>Bája,</h2>
+        <h3>Would you be my Valentine and go out with me on Valentine's Day?</h3>
+        <button onclick="window.location.href='yes.html'">Yes!</button>
+        <button onclick="window.location.href='no.html'">No</button>
+    </div>
+</div>
+
+<div id="letter-delivery-message" style="display: none;">
+    <div id="delivery-message-content">
+        <p>Honza gives you a special letter...</p>
+        <button id="open-letter-button">Open Letter</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
